@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { useDispatch } from "react-redux";
-import { addToCart } from "./redux/action";
+import { addToCart , removeToCart } from "./redux/action";
 
 function App() {
   const dispatch = useDispatch();
@@ -17,6 +17,11 @@ function App() {
         onClick={() => dispatch(addToCart(product))}
       >
         Add To Cart
+      </button>
+      <button
+        onClick={() => dispatch(removeToCart())}
+      >
+        Remove To Cart
       </button>
     </div>
   );
