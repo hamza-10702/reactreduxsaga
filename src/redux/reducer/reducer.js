@@ -10,7 +10,7 @@ export const cartData = (data = [], action) => {
             return [action.dataPayload , ...data];
         case REMOVE_TO_CART:
             console.log("Remove to cart item",1-1)
-            data.length = data.length ? data.length-1: 0
+            data.pop();
             return [...data];
         case EPMTY_CART:
             console.log("Empty cart",1-1)
@@ -23,20 +23,6 @@ export const cartData = (data = [], action) => {
     
     
 };
-// export const noCartData = (data = [], action) => {
-//     console.log("This is reducer start");
-//     console.log(action)
 
-//     switch(action.type){
-//         case ADD_TO_CART:
-//             console.log("ADD to Cart Item",1+1);
-//             return action.dataPayload;
-//         case REMOVE_TO_CART:
-//             console.log("Remove to cart item",1-1)
-//             return null;
-//         default:
-//             console.log(data);
-//             return "no action found"
-//     }
     
     

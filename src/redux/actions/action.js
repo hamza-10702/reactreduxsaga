@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_TO_CART, EPMTY_CART } from "./constant";
+import { ADD_TO_CART, REMOVE_TO_CART, EPMTY_CART } from "../constant";
 
 export const addToCart = (dataPayload) => {
   console.log(
