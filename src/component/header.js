@@ -2,6 +2,7 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const reducerData = useSelector((state) => state.cartData);
+  console.log(reducerData.length)
   return (
     <div className="header">
       <div className="cart-div">
