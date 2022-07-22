@@ -16,7 +16,7 @@ function Main() {
   return (
     <div>
       <button onClick={() => dispatch(addToCart(product))}>Add To Cart</button>
-      <button onClick={() => dispatch(removeToCart(product))}>Remove To Cart</button>
+      <button onClick={() => dispatch(removeToCart())}>Remove To Cart</button>
       <button onClick={() => dispatch(emptyCart())}>Empty Cart</button>
       <button onClick={() => dispatch(getProduct())}>Get product</button>
     </div>
