@@ -1,8 +1,7 @@
 import { GET_PRODUCTS } from "../constant";
 
-export const getProduct =()=>{
+export const fetchAllProduct =()=>{
     return{
         type : GET_PRODUCTS,
-        data : "apple"
     }
 }

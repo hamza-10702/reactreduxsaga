@@ -37,6 +37,12 @@
 }
 
 /* end header style */
+/* product UI style */
+.product-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

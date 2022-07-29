@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 import {cartData } from './reducer'
-import { getProduct } from "./productReducer";
+import { getAllProduct } from "./productReducer";
 
 export default combineReducers({
     cartData,
-    getProduct
+    getAllProduct
 });
