@@ -4,8 +4,8 @@ import { getProduct } from '../redux/actions/productAction'
 import { useDispatch , useSelector } from "react-redux";
 
 function Main() {
-  const producData = useSelector((state)=>state.getProduct)
-  console.log(producData,"ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp")
+  // const producData = useSelector((state)=>state.getProduct)
+  // console.log(producData,"ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp")
   const dispatch = useDispatch();
   const product = {
     name: "i Phone",
