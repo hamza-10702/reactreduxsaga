@@ -1,18 +1,25 @@
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const reducerData = useSelector((state) => state.cartData);
-  console.log(reducerData.length)
+  console.log(reducerData.length);
   return (
     <div className="header">
-      <div className="cart-div">
-        <span>{reducerData.length}</span>
-        {/* <span>{result.length}</span> */}
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
-          alt=""
-        />
-      </div>
+      <Link to="/cart">
+        <div className="cart-div">
+          <span>{reducerData.length}</span>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/263/263142.png"
+            alt=""
+          />
+        </div>
+      </Link>
+      <Link to="/">
+        <div>
+          <h3>Main Page</h3>
+        </div>
+      </Link>
     </div>
   );
 };
