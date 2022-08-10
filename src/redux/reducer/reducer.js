@@ -9,9 +9,11 @@ export const cartData = (data = [], action) => {
             console.log("ADD to Cart Item",1+1);
             return [action.dataPayload , ...data];
         case REMOVE_TO_CART:
-            console.log("Remove to cart item",1-1)
-            data.pop();
-            return [...data];
+            console.log("Remove to cart item",action)
+            console.log(data)
+            const remainingData = data.filter((item) => item.id !== action.dataPayload )
+            console.log(remainingData)
+            return [...remainingData];
         case EPMTY_CART:
             console.log("Empty cart",1-1)
             data.length = 0

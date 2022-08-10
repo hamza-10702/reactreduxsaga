@@ -6,12 +6,12 @@ import { useEffect } from "react";
 
 function Main() {
   const check = useSelector((state) => state.cartData);
-  console.log("cccccccccccccccccccccccccccccccccccccccccccccccccccc",check)
+  console.log(check)
   const producData = useSelector((state) => state.getAllProduct);
-  console.log(
-    producData,
-    "ppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp"
-  );
+  // console.log(
+  //   producData,
+    
+  // );
   const dispatch = useDispatch();
 
   useEffect(() => {

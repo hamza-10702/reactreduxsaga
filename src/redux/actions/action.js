@@ -18,7 +18,7 @@ export const removeToCart = (dataPayload) => {
   // console.log("This is remove to cart data ");
   return {
     type: REMOVE_TO_CART,
-    // dataPayload
+    dataPayload
   };
 };
 export const emptyCart = () => {

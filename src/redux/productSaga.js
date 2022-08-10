@@ -3,7 +3,7 @@ import { GET_PRODUCTS,SET_GETED_PRODUCT } from './constant';
 
 
 function* getProducts(){
-     let data = yield fetch('http://localhost:3004/Product');
+     let data = yield fetch('http://localhost:3000/Product');
     data = yield data.json();
     // console.log("GET_PRODUCTS called", data);
     yield put({type: SET_GETED_PRODUCT , data})
