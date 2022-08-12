@@ -35,7 +35,7 @@ function Main() {
       >
         {producData.map((item) => (
           <div className="product-item">
-            <div>ID : {item.id} </div>
+            <div key={item.id}>ID : {item.id} </div>
             <div>Name : {item.productname} </div>
             <div>PoductID : {item.productId} </div>
             <div>Price : {item.price} </div>
