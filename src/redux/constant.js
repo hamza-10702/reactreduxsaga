@@ -2,4 +2,5 @@ export const ADD_TO_CART = "ADD_TO_CART";
 export const REMOVE_TO_CART = "REMOVE_TO_CART";
 export const EPMTY_CART = "EPMTY_CART";
 export const GET_PRODUCTS = "GET_PRODUCTS";
-export const SET_GETED_PRODUCT = "SET_GETED_PRODUCT"
+export const SET_GETED_PRODUCT = "SET_GETED_PRODUCT";
+export const SEARCH_ALL_PRODUCT = "SEARCH_ALL_PRODUCT";
